@@ -35,6 +35,7 @@ export const keywords = [
 	"static",
 	"tool",
 	"var",
+	"when",
 	"while",
 	"yield",
 ];

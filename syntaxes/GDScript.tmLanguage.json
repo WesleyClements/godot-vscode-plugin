@@ -14,7 +14,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.flow.gdscript",
-					"match": "(?x)\n  \\b(?<!\\.)(\n continue | assert | break | elif | else | if | pass | return | while )\\b\n"
+					"match": "(?x)\n  \\b(?<!\\.)(\n continue | assert | break | elif | else | if | pass | return | when | while )\\b\n"
 				},
 				{
 					"name": "storage.type.class.gdscript",
@@ -193,7 +193,7 @@
 			"name": "keyword.operator.assignment.gdscript"
 		},
 		"control_flow": {
-			"match": "\\b(?:if|elif|else|while|break|continue|pass|return|match|yield|await)\\b",
+			"match": "\\b(?:if|elif|else|while|break|continue|pass|return|match|when|yield|await)\\b",
 			"name": "keyword.control.gdscript"
 		},
 		"keywords": {

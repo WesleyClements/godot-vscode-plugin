@@ -259,6 +259,37 @@ func if_test():
 
 # ------------------------------------------------------------------------------
 
+func match_test():
+	var some_int = 10
+	var some_array = [1, 2, 3]
+	var some_dict = {"a": 1, "b": 2, "c": 3}
+
+	match some_int:
+		0:
+			pass
+		var a when a > 0:
+			pass
+		_:
+			pass
+	
+	match some_array:
+		[1, 2, 3]:
+			pass
+		[1, var a, 3] when a > 0:
+			pass
+		_:
+			pass
+	
+	match some_dict:
+		{"a": 1, "b": 2, "c": 3}:
+			pass
+		{"a": 1, "b": var a, "c": 3} when a > 0:
+			pass
+		_:
+			pass
+
+# ------------------------------------------------------------------------------
+
 class InnerClass:
 	var some_var = 100
 	var dict = {
